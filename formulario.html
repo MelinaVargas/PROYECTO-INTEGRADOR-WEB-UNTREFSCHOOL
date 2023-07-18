@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+
+    <!-- Fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Estilos de Milligram -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      .navbar {
+        background-color: #1f8a70;
+        width: 100%;
+      }
+
+      .navbar-brand {
+        color: orange;
+        font-weight: bold;
+      }
+
+      .navbar-nav {
+        justify-content: center;
+      }
+
+      .navbar-nav .nav-link {
+        color: orange;
+        margin: 0 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"
+          >Volver a la página principal</a
+        >
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1>Formulario de contacto</h1>
+
+      <form
+        action="https://formspree.io/f/mrgwgnya"
+        method="post"
+        autocomplete="on"
+        enctype="multipart/form-data"
+      >
+        <input type="hidden" name="sitio" value="localhost" />
+
+        <!-- Cuerpo del Formulario -->
+
+        <label for="nombre">Nombre y Apellido: </label>
+        <input
+          type="text"
+          name="nombre"
+          id="nombre"
+          placeholder="Ingrese su nombre completo. Ej: Juan Pérez"
+          minlength="5"
+          maxlength="100"
+        />
+
+        <label for="email">Correo: </label>
+        <input
+          type="email"
+          name="correo"
+          id="email"
+          placeholder="Ej: juanperez@correo.com"
+        />
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea
+          id="mensaje"
+          name="mensaje"
+          rows="5"
+          maxlength="250"
+          required
+          placeholder="Escriba su mensaje"
+        ></textarea>
+        <br /><br />
+
+        <input
+          type="submit"
+          value="Enviar"
+          class="btn btn-primary"
+          style="background-color: #1f8a70"
+        />
+      </form>
+    </div>
+  </body>
+</html>

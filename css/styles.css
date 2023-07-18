@@ -1,0 +1,32 @@
+/* Estilos para la alineación de texto */
+
+p {
+  text-align: justify;
+}
+
+/* Estilos para la sección de propuesta educativa */
+
+.image-wrapper {
+  text-align: center; /* Centra el contenido dentro del contenedor */
+}
+
+.image-caption {
+  text-align: center; /* Centra el texto */
+}
+
+/* Estilo para el fondo del body */
+body {
+  background-color: #eff5f5; /* Color de fondo #EFF5F5 */
+}
+
+/* Estilo de color para el pie de página */
+footer {
+  background-color: #1f8a70;
+}
+
+/* Resto de estilos */
+
+/* Estilo de la fuente Belanosima */
+body {
+  font-family: "Belanosima", sans-serif;
+}
