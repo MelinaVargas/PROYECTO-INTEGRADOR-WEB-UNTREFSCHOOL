@@ -1,19 +1,28 @@
+/* Estilo de la fuente Belanosima */
+body {
+  font-family: "Belanosima", sans-serif;
+  color: #00425a; /* Cambia el color del texto de todo el documento */
+}
+
+/* Estilo de la fuente Poppins */
+p {
+  font-family: "Poppins", sans-serif;
+  color: #181823; /* Cambia el color del texto de todos los elementos p */
+}
+
 /* Estilos para dispositivos móviles */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* Cambiar la visualización de la lista de navegación */
   .navbar-nav {
     display: flex;
     justify-content: space-between;
   }
-
   /* Añadir un margen derecho a los elementos de la lista */
   .navbar-nav .nav-item {
-    margin-right: 10px;
   }
 }
 
 /* Estilos para la alineación de texto */
-
 p {
   text-align: justify;
 }
@@ -46,7 +55,6 @@ p {
 }
 
 /* Estilos para la sección de propuesta educativa */
-
 .image-wrapper {
   text-align: center; /* Centra el contenido dentro del contenedor */
 }
@@ -65,21 +73,9 @@ footer {
   background-color: #1f8a70;
 }
 
-/* Estilo de la fuente Belanosima */
-body {
-  font-family: "Belanosima", sans-serif;
-}
-
 /* Estilos del menú de navegación */
-.navbar-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.navbar-nav .nav-item {
-  margin: 0 10px; /* Espacio horizontal entre los elementos del menú */
+.navbar {
+  background-color: #1f8a70;
 }
 
 @media (max-width: 576px) {
